@@ -2,7 +2,7 @@
 
 ### _Machine learning + Angular2 + Python Tornado + Docker_ ###
 
-![ckd](D:\AI codes\Final_CKD_project\ckd.PNG)
+![ckd](ckd.PNG)
 
 Watch it live at - http://frontend-s.ckd-day2.087aac51.svc.dockerapp.io:4200/
 
