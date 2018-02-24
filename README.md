@@ -1,12 +1,12 @@
 ## Chronic Kidney Disease Prediction##
 
-###_Machine learning + Angular2 + Python Tornado + Docker_###
+### _Machine learning + Angular2 + Python Tornado + Docker_ ###
 
 ![ckd](D:\AI codes\Final_CKD_project\ckd.PNG)
 
 Watch it live at - http://frontend-s.ckd-day2.087aac51.svc.dockerapp.io:4200/
 
-## Running & Building the Apps via Docker##
+## Running & Building the Apps via Docker ##
 
 - Make sure to install docker on your machine
 - For windows 7 users, 
@@ -31,7 +31,7 @@ Watch it live at - http://frontend-s.ckd-day2.087aac51.svc.dockerapp.io:4200/
 
 
 
-##Running the Apps on their own##
+## Running the Apps on their own ##
 
 The web application consists of -
 
@@ -40,7 +40,7 @@ The web application consists of -
 
 
 
-### Steps to set up and run Tornado Web application###
+### Steps to set up and run Tornado Web application ###
 
 - Install anaconda 3 for python
 - Run main.py file from `health_predictor_tornado_app` directory
@@ -52,7 +52,7 @@ The web application consists of -
     - This will start the tornado server at - localhost:8080
       ​
 
-### Steps to set up and run the Web App (website)###
+### Steps to set up and run the Web App (website) ###
 
 - The web application is built on Angular2. angular-cli was used to create the web app
 
