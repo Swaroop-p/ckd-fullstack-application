@@ -1,0 +1,165 @@
+<a href="https://github.com/Swaroop-p" target="_blank">
+  <h1 style="text-align: center; color: #039488"> Chronic Kidney Disease Prediction</h1>
+</a>
+
+        
+<form class="form-inline" accept-charset="utf-8" style="text-align: center; margin-top: 20px; margin-bottom: 20px; padding: 20px" action="/action_page.php">
+    
+    <div class="col-md-12" style="outline-style: solid; outline-color: #039488; margin-bottom: 10px">
+
+        <div class="col-md-12" style="margin: 10px; margin-top: 50px; padding-left: 100px; padding-right: 100px">
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block;" for="number">Age (In Years)</label>
+                <input type="number" name="age" class="form-control" [(ngModel)]="age" id="age">
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">Blood Pressure (mm/Hg)</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="bp" id="bp">
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">Specific Gravity (nominal)</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="sg" id="sg">
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">Albumin (nominal)</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="al" id="al">
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">Sugar (nominal)</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="su" id="su">
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">Blood Glucose (mgs/dl)</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="bgr" id="bgr">
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin: 10px; padding-left: 100px; padding-right: 100px">                   
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                    <label style="display: block" for="number">RBC Count (millions/cmm)</label>
+                    <input name="s" type="number" class="form-control" [(ngModel)]="rc" id="rc">
+                </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px;">
+                <label style="display: block;" for="number">Red Blood Cells</label>
+                <input type="radio" name="rbc" [value]="0"  [(ngModel)]="rbc"> Normal
+                <br>
+                <input type="radio" name="rbc" [value]="1"  [(ngModel)]="rbc"> Abnormal
+                <br>
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block;" for="number">Puss Cell</label>
+                <input type="radio" name="pc" [value]="0"  [(ngModel)]="pc"> Normal
+                <br>
+                <input type="radio" name="pc" [value]="1"  [(ngModel)]="pc"> Abnormal
+                <br>
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block;" for="number">Puss Cell Clumps</label>
+                <input name="s" type="radio" name="pcc" [value]="1"  [(ngModel)]="pcc"> Present
+                <br>
+                <input name="s" type="radio" name="pcc" [value]="0"  [(ngModel)]="pcc"> Not Present
+                <br>
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block;" for="number">Bacteria</label>
+                <input name="s" type="radio" name="ba" [value]="1"  [(ngModel)]="ba"> Present
+                <br>
+                <input name="s" type="radio" name="ba" [value]="0"  [(ngModel)]="ba"> Not Present
+                <br>
+            </div>   
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">WBC Count (cells/cumm</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="wc"  id="wc">
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin: 10px; padding-left: 100px; padding-right: 100px">
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block;" for="number">Blood Urea (mgs/dl)</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="bu"  id="bu">
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">Serum Creatinine (mgs/dl)</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="sc"  id="sc">
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">Sodium (mEq/L)</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="sod"  id="sod">
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">Potassium (mEq/L)</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="pot"  id="pot">
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">Hemoglobin (gms)</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="hemo"  id="hemo">
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block" for="number">Packed Cell Volume</label>
+                <input name="s" type="number" class="form-control" [(ngModel)]="pcv"  id="pcv">
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin: 10px; padding-left: 100px; padding-right: 100px">
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block;" for="number">Hypertension</label>
+                <input type="radio" name="htn" [value]="1"  [(ngModel)]="htn"> Yes
+                <br>
+                <input type="radio" name="htn" [value]="0"  [(ngModel)]="htn"> No
+                <br>
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px;">
+                <label style="display: block;" for="number">Coronary Artery Disease</label>
+                <input type="radio" name="cad" [value]="1" [(ngModel)]="cad"> Yes
+                <br>
+                <input type="radio" name="cad" [value]="0" [(ngModel)]="cad"> No
+                <br>
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block;" for="number">Appetite</label>
+                <input type="radio" name="appet" [value]="1" [(ngModel)]="appet"> Good
+                <br>
+                <input type="radio" name="appet" [value]="0" [(ngModel)]="appet"> Poor
+                <br>
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block;" for="number">Pedal Edema</label>
+                <input type="radio" name="pe" [value]="1" [(ngModel)]="pe"> Present
+                <br>
+                <input type="radio" name="pe" [value]="0" [(ngModel)]="pe"> Not Present
+                <br>
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block;" for="number">Anemia</label>
+                <input type="radio" name="ane" [value]="1" [(ngModel)]="ane"> Yes
+                <br>
+                <input type="radio" name="ane" [value]="0" [(ngModel)]="ane"> No
+                <br>
+            </div>
+            <div class="col-md-2 form-group" style="margin-bottom: 10px">
+                <label style="display: block;" for="number">Diabetes Mellitus</label>
+                <input type="radio" name="dm" [value]="1" [(ngModel)]="dm"> Yes
+                <br>
+                <input type="radio" name="dm" [value]="0" [(ngModel)]="dm"> No
+                <br>
+            </div>
+        </div>
+
+    </div>
+    
+    <button type="button" style="margin: 10px" (click)="predict()" class="btn btn-primary" >Submit</button>
+    
+    <button style="margin: 10px" type="reset" (click)="reset()" class="btn btn-warning">Reset</button>
+
+    <button style="margin: 10px" (click)="noCKD()" class="btn btn-success">NO CKD </button>
+
+    <button style="margin: 10px" (click)="withCKD()" class="btn btn-danger">With CKD</button>
+
+</form>
+
+<div style="text-align: center">
+  <h3 *ngIf="result_from_server[0].result == 1" style="background: rgb(2, 180, 2); color: aliceblue">{{result}}</h3>
+  <h3 *ngIf="result_from_server[0].result == 0" style="background: rgb(231, 71, 71); color: aliceblue">{{result}}</h3>
+</div>
+
+

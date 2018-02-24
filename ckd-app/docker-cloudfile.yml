@@ -1,0 +1,10 @@
+backend-s:
+  image: 'swarooppadala/ckdbackend:latest'
+  ports:
+    - '80:8080'
+frontend-s:
+  image: 'swarooppadala/ckdfrontend:latest'
+  links:
+    - backend-s
+  ports:
+    - '4200:80'
