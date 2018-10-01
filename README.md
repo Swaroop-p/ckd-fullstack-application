@@ -115,3 +115,9 @@ The web application consists of -
   Open browser and go to -> *localhost:4200*
 
 
+## Steps to deploy Angular app to AWS
+
+
+## Steps to deploy Tornado app to AWS ESB
+
+
