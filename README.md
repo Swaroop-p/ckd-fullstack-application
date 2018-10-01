@@ -46,6 +46,10 @@ The web application consists of -
 ### Steps to set up and run Tornado Web application ###
 
 - Install anaconda 3 for python
+- Switch to the directory with the python application. Install the python packages from requirements.txt using the terminal.
+  ```
+  conda install --file requirements.txt
+  ```
 - Run main.py file from `health_predictor_tornado_app` directory
   - To run main.py, either open the project in pycharm, set anaconda python3 as the interpretor, and run main.py
   - Else, type anaconda in start menu - 
