@@ -4,7 +4,7 @@
 
 ![ckd](ckd.PNG)
 
-Watch it live at - http://frontend-s.ckd-day2.087aac51.svc.dockerapp.io:4200/
+Watch it live at - http://ckd-website.s3-website.ap-south-1.amazonaws.com/
 
 ## Running & Building the Apps via Docker ##
 
