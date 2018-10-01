@@ -7,6 +7,7 @@
 Watch it live at - http://ckd-website.s3-website.ap-south-1.amazonaws.com/
 
 The front end is developed on Angular Framework, deployed on AWS
+The Back end is a Tornado web application, deployed on AWS elastic beanstalk
 
 ## Running & Building the Apps via Docker ##
 
