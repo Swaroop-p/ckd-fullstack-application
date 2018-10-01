@@ -118,6 +118,5 @@ The web application consists of -
 ## Steps to deploy Angular app to AWS
 
 
-## Steps to deploy Tornado app to AWS ESB
-
+## Steps to deploy Tornado app to AWS Elastic Beanstalk
 
