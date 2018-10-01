@@ -6,6 +6,8 @@
 
 Watch it live at - http://ckd-website.s3-website.ap-south-1.amazonaws.com/
 
+The front end is developed on Angular Framework, deployed on AWS
+
 ## Running & Building the Apps via Docker ##
 
 - Make sure to install docker on your machine
